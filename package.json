@@ -1,6 +1,6 @@
 {
   "name": "octo-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node module for remotely accessing an OctoPrint instance",
   "main": "index.js",
   "scripts": {

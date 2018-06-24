@@ -57,8 +57,8 @@ var OctoPrint = require('octo-client');
 
 OctoPrint.printerState(function(ptr){
   if (ptr.state.flags.operational) {
-    var targetHotend1 = ptr.state.temperature.tool0.target;
-    // etc
+    var targetHotend1 = ptr.temperature.tool0.target;
+    console.log(targetHotend1);
   }
 });
 
@@ -70,7 +70,7 @@ OctoPrint.printerState(function(ptr){
 
 |Description|Version|Author|Last Update|
 |:---|:---|:---|:---|
-|octo-client|v1.0.1|OutsourcedGuru|June 23, 2018|
+|octo-client|v1.0.2|OutsourcedGuru|June 23, 2018|
 
 |Donate||Cryptocurrency|
 |:-----:|---|:--------:|
