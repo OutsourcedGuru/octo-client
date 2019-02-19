@@ -19,7 +19,7 @@ npm install --save octo-client
 ```
 
 ## Configuration
-Next, you'll need to edit your appdir's `node_modules/octo-client/config.js` file to enter your printer's `hostName` ("octopi.local" by default) and `apiKey` (found under OctoPrint -> Settings -> API).
+Next, you'll need to edit your appdir's `node_modules/octo-client/config.js` file to enter your printer's `hostName` ("octopi.local" by default) and `apiKey` (found under OctoPrint -> Settings -> API). Optionally, change the `port` as well from the default **80** to something else like **5000**, for example.
 
 ## Usage
 Review the `examples.js` file for the various calls to the interface.
@@ -316,7 +316,7 @@ OctoPrint.languages(callback);
 
 See the `printerState` documentation below for error conditions.
 
-### setings
+### settings
 OctoPrint.settings(callback);
 
 ```
@@ -653,6 +653,9 @@ Please set the `config.apiKey` value as described in the Configuration section a
 ## config.hostName
 If you have changed the default name of the OctoPi-imaged printer, then you should also edit this entry in the `node_modules/octo-client` folder. Remember to append `.local` after the hostname's value.
 
+## config.port
+If you aren't running from the OctoPi image or if you haven't installed `haproxy`, you may need to update the `port` variable to **5000** by editing this entry in the `node_modules/octo-client` folder.
+
 ## DNS failure
 If the `config.hostName` as given isn't found on the network due to the printer being off or due to a name resolution failure, any of the methods will return, for example:
 
@@ -667,7 +670,7 @@ Microsoft clients do not have the Bonjour protocol loaded by default and may hav
 
 |Description|Version|Author|Last Update|
 |:---|:---|:---|:---|
-|octo-client|v1.1.1|OutsourcedGuru|June 24, 2018|
+|octo-client|v1.1.3|OutsourcedGuru|February 19, 2019|
 
 |Donate||Cryptocurrency|
 |:-----:|---|:--------:|

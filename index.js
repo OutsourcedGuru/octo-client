@@ -15,7 +15,7 @@ function queryPrinter(method, path, body, callback) {
   if (body) {
     var postData = JSON.stringify(body);
     options = {
-      hostname:  config.hostName,  port: 80,  path: path,  method: method,  timeout: 5000,
+      hostname:  config.hostName,  port: config.port,  path: path,  method: method,  timeout: 5000,
       headers:   {
                  'X-Api-Key':      config.apiKey,
                  'Content-Type':   'application/json',
@@ -24,7 +24,7 @@ function queryPrinter(method, path, body, callback) {
     };  // options = ...
   } else {
     options = {
-      hostname:  config.hostName,  port: 80,  path: path,  method: method,  timeout: 5000,
+      hostname:  config.hostName,  port: config.port,  path: path,  method: method,  timeout: 5000,
       headers:   {
                  'X-Api-Key':      config.apiKey,
                  'Content-Type':   'application/json'
