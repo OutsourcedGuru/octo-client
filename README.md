@@ -18,6 +18,8 @@ cd ~/MyNodeApp
 npm install --save octo-client
 ```
 
+[![install size](https://packagephobia.now.sh/badge?p=octo-client)](https://packagephobia.now.sh/result?p=octo-client)
+
 ## Configuration
 Next, you'll need to edit your appdir's `node_modules/octo-client/config.js` file to enter your printer's `hostName` ("octopi.local" by default) and `apiKey` (found under OctoPrint -> Settings -> API). Optionally, change the `port` as well from the default **80** to something else like **5000**, for example.
 
@@ -670,7 +672,7 @@ Microsoft clients do not have the Bonjour protocol loaded by default and may hav
 
 |Description|Version|Author|Last Update|
 |:---|:---|:---|:---|
-|octo-client|v1.1.3|OutsourcedGuru|February 19, 2019|
+|octo-client|v1.1.4|OutsourcedGuru|April 23, 2019|
 
 |Donate||Cryptocurrency|
 |:-----:|---|:--------:|
